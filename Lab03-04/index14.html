@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .feedback-form {
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      font-family: Arial;
+    }
+
+    .feedback-form input, .feedback-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .stars {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .stars label {
+      font-size: 24px;
+      color: #ccc;
+      cursor: pointer;
+    }
+
+    .stars input[type="radio"] {
+      display: none;
+    }
+
+    .stars input[type="radio"]:checked ~ label {
+      color: gold;
+    }
+
+    .feedback-form button {
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .feedback-form button:hover {
+      background-color: #e68a00;
+    }
+  </style>
+</head>
+<body>
+  <form class="feedback-form">
+    <h3>Gửi phản hồi</h3>
+
+    <div class="stars">
+      <input type="radio" id="star5" name="rate" value="5">
+      <label for="star5">★</label>
+      <input type="radio" id="star4" name="rate" value="4">
+      <label for="star4">★</label>
+      <input type="radio" id="star3" name="rate" value="3">
+      <label for="star3">★</label>
+      <input type="radio" id="star2" name="rate" value="2">
+      <label for="star2">★</label>
+      <input type="radio" id="star1" name="rate" value="1">
+      <label for="star1">★</label>
+    </div>
+
+    <textarea placeholder="Ý kiến của bạn..." rows="4"></textarea>
+    <input type="email" placeholder="Email của bạn" required>
+    <button type="submit">Gửi phản hồi</button>
+  </form>
+</body>
+</html>
+
+</body>
+</html>
