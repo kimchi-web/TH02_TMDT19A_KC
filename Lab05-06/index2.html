@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .subject-card {
+            border: 2px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            background-color: #dd9a9a;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Danh sách môn học yêu thích</h1>
+
+    <div class="grid-container">
+        <div class="subject-card">Toán cao cấp 1</div>
+        <div class="subject-card">Tiếng Anh 1</div>
+        <div class="subject-card">Ý Tưởng Khởi Ngiệp</div>
+        <div class="subject-card">Python</div>
+        <div class="subject-card">Kỹ Năng Giao Tiếp</div>
+    </div>
+
+</body>
+
+</html>
