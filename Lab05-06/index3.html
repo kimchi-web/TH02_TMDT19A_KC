@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .schedule-row {
+            display: grid;
+            grid-template-columns: 150px repeat(5, 1fr);
+            gap: 5px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            align-items: center;
+        }
+        
+        .schedule-row div {
+            padding: 8px;
+            border: 1px solid #ccc;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        
+        .header {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+        
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .schedule-row.header div {
+            background-color: #cfd8dc;
+            color: #000;
+            font-weight: bold;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bảng Thời Khoá Biểu</h1>
+
+    <div class="schedule-row header">
+        <div>Giờ</div>
+        <div>Thứ 2</div>
+        <div>Thứ 3</div>
+        <div>Thứ 4</div>
+        <div>Thứ 5</div>
+        <div>Thứ 6</div>
+    </div>
+
+    <div class="schedule-row">
+        <div>7:00 - 9:00</div>
+        <div>Toán</div>
+        <div>Văn</div>
+        <div>Trống</div>
+        <div>Thể dục</div>
+        <div>Lý</div>
+    </div>
+
+    <div class="schedule-row">
+        <div>9:15 - 11:15</div>
+        <div>Hóa</div>
+        <div>Sử</div>
+        <div>Trống</div>
+        <div>Địa</div>
+        <div>Văn</div>
+    </div>
+
+</body>
+
+</html>
