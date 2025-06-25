@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: teal;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Form Đăng Ký Thông Tin</h2>
+    <form class="form-container">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="fullname">Họ và tên</label>
+                <input type="text" id="fullname" placeholder="Nhập họ tên">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Nhập email">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" placeholder="Nhập số điện thoại">
+            </div>
+            <div class="form-group">
+                <label for="gender">Giới tính</label>
+                <select id="gender">
+        <option>Nam</option>
+        <option>Nữ</option>
+        <option>Khác</option>
+      </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" placeholder="Nhập mật khẩu">
+        </div>
+
+        <div class="form-group">
+            <label for="note">Ghi chú</label>
+            <textarea id="note" rows="4" placeholder="Ghi chú thêm..."></textarea>
+        </div>
+
+        <button type="submit">Đăng ký</button>
+    </form>
+
+</body>
+
+</html>
