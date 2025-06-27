@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-diction : column;
+            max-width: 400px;
+            margin: auto;
+
+        }
+           .flex-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<from>
+        <div class ="flex-row">
+            <label> <input type=" radio" name= "option" value="1"> Tùy chọn 1</label>
+            <label> <input type=" radio" name= "option" value="2"> Tùy chọn 2</label>
+        </div>
+        <div class ="flex-row">
+                <label><input type="checkbox" name="check1"> Checkbox 1</label>
+                <label><input type="checkbox" name="check2"> Checkbox 2</label>
+        </div>
+        <textarea rows="4" placeholder="Nhập ý kiến của bạn..."></textarea>
+        <button type="submit">Gửi</button>
+ </from>
+</body>
+</html>
