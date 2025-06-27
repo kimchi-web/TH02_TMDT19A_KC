@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            background: #f0f0f0;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3, .card p {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="grid-container">
+    <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.Gl_qZEkmZ7StAfro4j5e_QHaE1?w=291&h=191&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Dự án 1">
+        <h3>Tiêu đề 1</h3>
+        <p>Mô tả ngắn gọn về dự án 1.</p>
+    </div>
+    <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.Lp0ikx_2z2pTHMuwiL75kAHaIK?w=173&h=191&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Dự án 2">
+        <h3>Tiêu đề 2</h3>
+        <p>Mô tả ngắn gọn về dự án 2.</p>
+    </div>
+    <!-- Thêm nhiều card hơn nếu cần -->
+</div>
+</body>
+</html>
