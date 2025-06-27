@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột */
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Tablet: 2 cột */
+@media (max-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 cột */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://th.bing.com/th/id/OIP.BMzn24d9rinqOtAuuelOcAHaHa?r=0&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" alt="">
+        <img src="https://toigingiuvedep.vn/wp-content/uploads/2022/04/nhung-tam-anh-hai-huoc.jpg" alt="">
+        <img src="https://th.bing.com/th/id/OIP.EYf79LjUtqOxq6JtSi-6bwHaG6?r=0&pid=ImgDet&w=178&h=166&c=7&dpr=1.5&cb=idpwebp2&o=7&rm=3" alt="">
+        <img src="https://th.bing.com/th/id/OIP.aSBkVs-GVFTVaYuMFD4NIgHaLW?r=0&pid=ImgDet&w=178&h=272&c=7&dpr=1.5&cb=idpwebp2&o=7&rm=3" alt="">
+      </div>
+      
+</body>
+</html>
