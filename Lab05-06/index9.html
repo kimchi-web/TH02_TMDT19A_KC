@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .audio-card {
+  display: grid;
+  grid-template-rows: auto auto; /* 2 hàng: audio + mô tả */
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 500px;
+  background: #f9f9f9;
+  margin: 0 auto;
+}
+
+.audio-card audio {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.audio-description {
+  text-align: center;
+}
+
+.audio-description h4 {
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+}
+
+.audio-description p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+    </style>
+</head>
+<body>
+    <div class="audio-card">
+        <audio controls>
+          <source src="https://zingmp3.vn/album/Anh-Oi-O-Lai-Single-Chi-Pu-Dat-G/ZUBW8WBE.html" type="audio/mpeg">
+      
+        </audio>
+        <div class="audio-description">
+          <h4>Bài hát: Anh Ơi Anh Ở Lại </h4>
+          <p>Tên ca sĩ: Chi Pu ; Quốc gia: Vệt nam </p>
+        </div>
+      </div>
+      
+</body>
+</html>
