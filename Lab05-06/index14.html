@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+             background: #218838;
+        
+        }
+           
+    </style>
+</head>
+<body>
+    <form>
+    <input type="text" placeholder="Họ tên" required>
+    <textarea rows="4" placeholder="Nội dung phản hồi"></textarea>
+    <div class="rating">
+        <label>1 sao</label><input type="radio" name="rating" value="1">
+        <label>2 sao</label><input type="radio" name="rating" value="2">
+        <label>3 sao</label><input type="radio" name="rating" value="3">
+        <label>4 sao</label><input type="radio" name="rating" value="4">
+        <label>5 sao</label><input type="radio" name="rating" value="5">
+    </div>
+    <button type="submit">Gửi Phản Hồi</button>
+</form>
+</body>
+</html>
