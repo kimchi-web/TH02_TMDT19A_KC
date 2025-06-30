@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tour-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.tour-description {
+  flex: 1;
+}
+.tour-media {
+  flex: 1;
+}
+.tour-media img, .tour-media iframe {
+  width: 100%;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .tour-container {
+    flex-direction: column;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="tour-container">
+  <div class="tour-description">
+    <h1>Khám phá Đà Lạt</h1>
+    <p>Đà Lạt nổi tiếng với khí hậu ôn hòa, cảnh sắc tuyệt đẹp và nhiều điểm đến hấp dẫn.</p>
+  </div>
+  <div class="tour-media">
+    <img src="https://th.bing.com/th/id/OIP.s-jx5s5Rqgj9kqsGoryCrQHaEk?w=295&h=182&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Ảnh Đà Lạt" />
+    
+  </div>
+</div>
+  
+</body>
+</html>
