@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+.event-card {
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .calendar-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+    .h1{
+    display: flex;
+    justify-content: center;
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="h1"> Lịch Hoạt Động Trong Tuần</h1>
+    <div class="calendar-grid">
+  <div class="event-card">Thứ 2<br>Đại hội ca nhạc</div>
+  <div class="event-card">Thứ 3<br>Sự kiện thời trang</div>
+  <div class="event-card">Thứ 4<br>Sự kiện ra mắt sản phẩm </div>
+  <div class="event-card">Thứ 5<br>Show đại nhạc hội</div>
+  <div class="event-card">Thứ 6<br>Sự kiện thời trang</div>
+  <div class="event-card">Thứ 7<br>Làm mẫu cho nhà thiết kế</div>
+  <div class="event-card">Chủ nhật<br>Ra mắt phim </div>
+</div>
+
+</body>
+</html>
